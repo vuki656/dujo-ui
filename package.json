@@ -9,6 +9,7 @@
   "license": "MIT",
   "main": "./lib/index.cjs.js",
   "source": "./src/index.ts",
+  "types": "./lib/index.d.ts",
   "private": false,
   "scripts": {
     "build": "cross-env NODE_ENV=production rollup --config && tsc --emitDeclarationOnly",
