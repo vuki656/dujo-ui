@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { CSSObject } from 'styled-components'
 
-import { WarningIcon } from '../../icons/WarningIcon'
+import { WarningIcon } from '../icons/WarningIcon'
 
 import { TextAreaProps } from './TextArea.types'
 

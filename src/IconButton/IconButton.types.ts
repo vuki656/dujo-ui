@@ -3,7 +3,7 @@ import React from 'react'
 import {
     ButtonVariantType,
     IconSizeType,
-} from '../../styles'
+} from '../styles'
 
 export type IconButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
     icon: React.ReactElement,

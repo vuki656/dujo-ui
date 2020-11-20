@@ -2,9 +2,9 @@ import React from 'react'
 import { animated } from 'react-spring'
 import styled, { CSSObject } from 'styled-components'
 
-import { CheckIcon } from '../../icons/CheckIcon'
-import { InfoIcon } from '../../icons/InfoIcon'
-import { WarningIcon } from '../../icons/WarningIcon'
+import { CheckIcon } from '../icons/CheckIcon'
+import { InfoIcon } from '../icons/InfoIcon'
+import { WarningIcon } from '../icons/WarningIcon'
 
 import { NotificationProps } from './Notification.types'
 

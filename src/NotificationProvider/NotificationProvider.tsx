@@ -6,9 +6,9 @@ import {
     useTransition,
 } from 'react-spring'
 
-import { NotificationVariantType } from '../../styles'
 import { Notification } from '../Notification'
 import { NotificationType } from '../Notification/Notification.types'
+import { NotificationVariantType } from '../styles'
 
 import { NotificationProviderRoot } from './NotificationProvider.styles'
 import { NotificationContextType } from './NotificationProvider.types'
@@ -25,7 +25,7 @@ export const NotificationProvider: React.FunctionComponent = (props) => {
 
     const renderNotifications = useTransition(notifications, {
         config: config.gentle,
-        keys: notifications.map((item, index) => index),
+        keys: notifications.map((_item, index) => index),
         from: {
             opacity: 0,
             transform: 'translate3d(100%, 0px, 0px)',

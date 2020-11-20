@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 
-import { DoneIcon } from '../../icons/DoneIcon'
+import { DoneIcon } from '../icons/DoneIcon'
 
 import { CheckboxProps } from './Checkbox.types'
 

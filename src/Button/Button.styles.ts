@@ -4,7 +4,7 @@ import styled, {
     keyframes,
 } from 'styled-components'
 
-import { Theme } from '../../styles'
+import { Theme } from '../styles'
 
 import { ButtonProps } from './Button.types'
 
