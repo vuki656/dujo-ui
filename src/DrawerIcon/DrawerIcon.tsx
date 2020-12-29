@@ -2,10 +2,10 @@ import * as React from 'react'
 
 import { Tooltip } from '../Tooltip'
 
-import { DrawerIconButtonRoot } from './DrawerIconButton.styles'
-import { DrawerIconButtonProps } from './DrawerIconButton.types'
+import { DrawerIconRoot } from './DrawerIcon.styles'
+import { DrawerIconProps } from './DrawerIcon.types'
 
-export const DrawerIconButton = React.forwardRef<HTMLDivElement, DrawerIconButtonProps>((props, ref) => {
+export const DrawerIcon = React.forwardRef<HTMLDivElement, DrawerIconProps>((props, ref) => {
     const {
         icon,
         tooltipText,
@@ -15,14 +15,14 @@ export const DrawerIconButton = React.forwardRef<HTMLDivElement, DrawerIconButto
     } = props
 
     const core = (
-        <DrawerIconButtonRoot
+        <DrawerIconRoot
             onClick={onClick}
             ref={ref}
             selected={selected}
             {...other}
         >
             {icon}
-        </DrawerIconButtonRoot>
+        </DrawerIconRoot>
     )
 
     if (tooltipText) {

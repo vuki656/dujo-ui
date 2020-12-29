@@ -1,6 +1,6 @@
 import React from 'react'
 
-export type DrawerIconButtonProps = React.HTMLAttributes<HTMLDivElement> & {
+export type DrawerIconProps = React.HTMLAttributes<HTMLDivElement> & {
     icon: React.ReactElement,
     tooltipText?: string,
     selected?: boolean,

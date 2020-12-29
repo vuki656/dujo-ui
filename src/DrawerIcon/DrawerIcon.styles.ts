@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components'
 
-import { DrawerIconButtonProps } from './DrawerIconButton.types'
+import { DrawerIconProps } from './DrawerIcon.types'
 
 type DrawerIconButtonRootProps =
     React.HTMLAttributes<HTMLDivElement>
-    & Pick<DrawerIconButtonProps, 'selected'>
+    & Pick<DrawerIconProps, 'selected'>
 
-export const DrawerIconButtonRoot = styled('div')<DrawerIconButtonRootProps>((props) => ({
+export const DrawerIconRoot = styled('div')<DrawerIconButtonRootProps>((props) => ({
     '& svg': {
         fill: props.selected
             ? props.theme.palette.grey.dark300
