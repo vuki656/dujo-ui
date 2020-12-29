@@ -6,7 +6,7 @@ import { DrawerProps } from './Drawer.types'
 export const Drawer: React.FunctionComponent<DrawerProps> = (props) => {
     const {
         children,
-        variant,
+        variant = 'mini',
         ...other
     } = props
 
