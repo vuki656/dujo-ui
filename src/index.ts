@@ -16,4 +16,4 @@ export * from './TextField'
 export * from './Tooltip'
 
 export * from './styles'
-export * from './icons'
+export * from './Icons'

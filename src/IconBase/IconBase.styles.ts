@@ -1,7 +1,7 @@
 import React from 'react'
 import styled, { CSSObject } from 'styled-components'
 
-import { IconCommonProps } from '../icons/Icon.types'
+import { IconCommonProps } from '../Icons/Icon.types'
 import { IconSizeType } from '../styles'
 
 type SvgRootProps =
