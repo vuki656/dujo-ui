@@ -28,6 +28,7 @@ export const DialogHeader = styled('div')((props) => ({
     justifyContent: 'space-between',
     paddingBottom: props.theme.spacing.md,
 }))
+
 export const DialogTitle = styled('p')((props) => ({
     ...props.theme.typography.title,
     margin: 0,

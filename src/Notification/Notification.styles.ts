@@ -1,12 +1,15 @@
-import React from 'react'
+import type React from 'react'
 import { animated } from 'react-spring'
-import styled, { CSSObject } from 'styled-components'
+import type { CSSObject } from 'styled-components'
+import styled from 'styled-components'
 
-import { CheckIcon } from '../Icons/CheckIcon'
-import { InfoIcon } from '../Icons/InfoIcon'
-import { WarningIcon } from '../Icons/WarningIcon'
+import {
+    CheckIcon,
+    InfoIcon,
+    WarningIcon,
+} from '../Icons'
 
-import { NotificationProps } from './Notification.types'
+import type { NotificationProps } from './Notification.types'
 
 type NotificationRootProps =
     React.HTMLAttributes<HTMLDivElement>
@@ -62,4 +65,3 @@ export const NotificationMessage = styled('p')((props) => ({
     maxWidth: '500px',
     minWidth: '300px',
 }))
-

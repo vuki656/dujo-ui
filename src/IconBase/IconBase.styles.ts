@@ -1,20 +1,14 @@
-import React from 'react'
-import styled, { CSSObject } from 'styled-components'
+import type React from 'react'
+import type { CSSObject } from 'styled-components'
+import styled from 'styled-components'
 
-import { IconCommonProps } from '../Icons/Icon.types'
-import { IconSizeType } from '../styles'
+import type { IconCommonProps } from '../Icons/Icon.types'
+import type { IconSizeType } from '../styles'
 
 type SvgRootProps =
     React.SVGAttributes<SVGElement>
     & Pick<IconCommonProps, 'size'>
 
-export const SvgRoot = styled('svg')<SvgRootProps>((props) => {
-    const styles: CSSObject = { ...getSize(props.size) }
-
-    return styles
-})
-
-// eslint-disable-next-line consistent-return
 const getSize = (size?: IconSizeType) => {
     switch (size) {
         case 'small':
@@ -39,3 +33,9 @@ const getSize = (size?: IconSizeType) => {
             }
     }
 }
+
+export const SvgRoot = styled('svg')<SvgRootProps>((props) => {
+    const styles: CSSObject = { ...getSize(props.size) }
+
+    return styles
+})

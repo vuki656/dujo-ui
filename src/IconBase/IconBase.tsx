@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { SvgRoot } from './IconBase.styles'
-import { IconBaseProps } from './IconBase.types'
+import type { IconBaseProps } from './IconBase.types'
 
 export const IconBase: React.FunctionComponent<IconBaseProps> = (props) => {
     const {

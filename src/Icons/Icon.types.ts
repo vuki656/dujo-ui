@@ -1,4 +1,4 @@
-import { IconSizeType } from '../styles'
+import type { IconSizeType } from '../styles'
 
 export type IconCommonProps = {
     size?: IconSizeType

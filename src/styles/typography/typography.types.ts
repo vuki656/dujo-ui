@@ -1,10 +1,10 @@
-import * as CSS from 'csstype'
+import type * as CSS from 'csstype'
 
 export type TypographyStyle = {
-    fontWeight: CSS.Property.FontWeight,
-    fontStyle: CSS.Property.FontStyle,
-    fontSize: string | number,
-    lineHeight: string | number,
+    fontWeight: CSS.Property.FontWeight
+    fontStyle: CSS.Property.FontStyle
+    fontSize: string | number
+    lineHeight: string | number
 }
 
 export type TypographyVariant =
@@ -16,8 +16,8 @@ export type TypographyVariant =
 export type Typography =
     {
         fontFamily: {
-            primary: string,
-            secondary: string,
-        },
+            primary: string
+            secondary: string
+        }
     }
     & Record<TypographyVariant, TypographyStyle>

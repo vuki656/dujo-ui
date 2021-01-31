@@ -3,7 +3,7 @@ import * as React from 'react'
 import { Loader } from '../Button'
 
 import { IconButtonRoot } from './IconButton.stypes'
-import { IconButtonProps } from './IconButton.types'
+import type { IconButtonProps } from './IconButton.types'
 
 export const IconButton: React.FunctionComponent<IconButtonProps> = (props) => {
     const {
@@ -25,8 +25,7 @@ export const IconButton: React.FunctionComponent<IconButtonProps> = (props) => {
                     React.cloneElement(
                         icon,
                         { size: size })
-                )
-            }
+                )}
         </IconButtonRoot>
     )
 }

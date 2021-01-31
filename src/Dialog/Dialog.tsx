@@ -7,7 +7,7 @@ import {
     DialogRoot,
     DialogTitle,
 } from './Dialog.styles'
-import { DialogProps } from './Dialog.types'
+import type { DialogProps } from './Dialog.types'
 
 export const Dialog: React.FunctionComponent<DialogProps> = (props) => {
     const {

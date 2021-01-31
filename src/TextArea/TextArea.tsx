@@ -8,7 +8,7 @@ import {
     TextAreaLabel,
     TextAreaRoot,
 } from './TextArea.styles'
-import { TextAreaProps } from './TextArea.types'
+import type { TextAreaProps } from './TextArea.types'
 
 export const TextArea: React.FunctionComponent<TextAreaProps> = (props) => {
     const {
@@ -33,8 +33,7 @@ export const TextArea: React.FunctionComponent<TextAreaProps> = (props) => {
                 <TextAreaHelperWrapper>
                     {error
                         ? <TextAreaErrorIcon size="small" />
-                        : null
-                    }
+                        : null}
                     <TextAreaHelperText error={error}>
                         {helperText}
                     </TextAreaHelperText>

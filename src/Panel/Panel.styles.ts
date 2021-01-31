@@ -1,7 +1,7 @@
-import React from 'react'
+import type React from 'react'
 import styled from 'styled-components'
 
-import { PanelProps } from './Panel.types'
+import type { PanelProps } from './Panel.types'
 
 type PanelRootProps =
     React.HTMLAttributes<HTMLDivElement>

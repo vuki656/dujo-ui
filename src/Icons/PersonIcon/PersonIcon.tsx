@@ -1,12 +1,15 @@
 import * as React from 'react'
 
 import { IconBase } from '../../IconBase'
-import { IconCommonProps } from '../Icon.types'
+import type { IconCommonProps } from '../Icon.types'
 
 export const PersonIcon = React.memo<IconCommonProps>((props) => {
     return (
         <IconBase {...props}>
-            <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z" />
+            <path
+                d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8
+                4v2h16v-2c0-2.66-5.33-4-8-4z"
+            />
         </IconBase>
     )
 })

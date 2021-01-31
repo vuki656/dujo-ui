@@ -1,4 +1,4 @@
-import { Transitions } from './transition.types'
+import type { Transitions } from './transition.types'
 
 export const transition: Transitions = {
     create: (

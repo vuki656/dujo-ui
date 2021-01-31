@@ -5,7 +5,7 @@ import {
     DatePickerLabel,
     DatePickerRoot,
 } from './DatePicker.styles'
-import { DatePickerProps } from './DatePicker.types'
+import type { DatePickerProps } from './DatePicker.types'
 
 export const DatePicker: React.FunctionComponent<DatePickerProps> = (props) => {
     const {

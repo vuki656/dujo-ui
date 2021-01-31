@@ -1,12 +1,13 @@
-import React from 'react'
-import styled, { CSSObject } from 'styled-components'
+import type React from 'react'
+import type { CSSObject } from 'styled-components'
+import styled from 'styled-components'
 
-import { WarningIcon } from '../Icons/WarningIcon'
+import { WarningIcon } from '../Icons'
 
 type TextFieldRootProps =
     React.HTMLAttributes<HTMLDivElement>
     & {
-    fullWidth: boolean,
+    fullWidth: boolean
 }
 
 export const TextFieldRoot = styled('div')<TextFieldRootProps>((props) => {
@@ -49,7 +50,7 @@ export const TextFieldHelperWrapper = styled('div')({
 })
 
 type TextFieldHelperTextProps = React.HTMLAttributes<HTMLParagraphElement> & {
-    error: boolean,
+    error: boolean
 }
 
 export const TextFieldHelperText = styled('p')<TextFieldHelperTextProps>((props) => {

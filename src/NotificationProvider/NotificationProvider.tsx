@@ -7,11 +7,11 @@ import {
 } from 'react-spring'
 
 import { Notification } from '../Notification'
-import { NotificationType } from '../Notification/Notification.types'
-import { NotificationVariantType } from '../styles'
+import type { NotificationType } from '../Notification/Notification.types'
+import type { NotificationVariantType } from '../styles'
 
 import { NotificationProviderRoot } from './NotificationProvider.styles'
-import { NotificationContextType } from './NotificationProvider.types'
+import type { NotificationContextType } from './NotificationProvider.types'
 
 export const NotificationContext = React.createContext<NotificationContextType | null>(null)
 
@@ -25,15 +25,15 @@ export const NotificationProvider: React.FunctionComponent = (props) => {
 
     const renderNotifications = useTransition(notifications, {
         config: config.gentle,
-        keys: notifications.map((_item, index) => index),
-        from: {
-            opacity: 0,
-            transform: 'translate3d(100%, 0px, 0px)',
-        },
         enter: {
             opacity: 1,
             transform: 'translate3d(0%, 0px, 0px)',
         },
+        from: {
+            opacity: 0,
+            transform: 'translate3d(100%, 0px, 0px)',
+        },
+        keys: notifications.map((_item, index) => index),
         leave: {
             opacity: 0,
             transform: 'translate3d(100%, 0px, 0px)',
@@ -46,16 +46,16 @@ export const NotificationProvider: React.FunctionComponent = (props) => {
                 const id = String(Date.now() + Math.random())
 
                 // Display notification
-                setNotification((notifications) => {
-                    const notificationDisplayed = notifications.some((notification) => {
+                setNotification((existingNotifications) => {
+                    const isNotificationDisplayed = existingNotifications.some((notification) => {
                         return notification.message === message
                     })
 
-                    if (notificationDisplayed) {
-                        return notifications
+                    if (isNotificationDisplayed) {
+                        return existingNotifications
                     }
 
-                    return notifications.concat({
+                    return existingNotifications.concat({
                         id: id,
                         message,
                         variant,
@@ -64,8 +64,8 @@ export const NotificationProvider: React.FunctionComponent = (props) => {
 
                 // Remove notification
                 setTimeout(() => {
-                    setNotification((notifications) => {
-                        return notifications.filter((notification) => {
+                    setNotification((existingNotifications) => {
+                        return existingNotifications.filter((notification) => {
                             return notification.id !== id
                         })
                     })
@@ -83,7 +83,7 @@ export const NotificationProvider: React.FunctionComponent = (props) => {
                         <Notification
                             // There is a type mismatch probably due to version being rc3
                             /* eslint-disable-next-line @typescript-eslint/ban-ts-comment */
-                            // @ts-ignore
+                            // @ts-expect-error
                             style={styles}
                             variant={notification.variant}
                         >

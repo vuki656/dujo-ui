@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
-import { DoneIcon } from '../Icons/DoneIcon'
+import { DoneIcon } from '../Icons'
 
-import { CheckboxProps } from './Checkbox.types'
+import type { CheckboxProps } from './Checkbox.types'
 
 type CheckboxCheckmarkProps = Pick<CheckboxProps, 'checked'>
 

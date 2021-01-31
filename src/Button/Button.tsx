@@ -5,7 +5,7 @@ import {
     ButtonRoot,
     Loader,
 } from './Button.styles'
-import { ButtonProps } from './Button.types'
+import type { ButtonProps } from './Button.types'
 
 export const Button: React.FunctionComponent<ButtonProps> = (props) => {
     const {

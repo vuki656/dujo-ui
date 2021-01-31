@@ -1,7 +1,8 @@
-import React from 'react'
-import styled, { CSSObject } from 'styled-components'
+import type React from 'react'
+import type { CSSObject } from 'styled-components'
+import styled from 'styled-components'
 
-import { DrawerProps } from './Drawer.types'
+import type { DrawerProps } from './Drawer.types'
 
 type DrawerRootProps =
     React.HTMLAttributes<HTMLDivElement>
@@ -28,4 +29,3 @@ export const DrawerRoot = styled('div')<DrawerRootProps>((props) => {
 
     return styles
 })
-

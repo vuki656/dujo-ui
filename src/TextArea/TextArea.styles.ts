@@ -1,9 +1,10 @@
-import React from 'react'
-import styled, { CSSObject } from 'styled-components'
+import type React from 'react'
+import type { CSSObject } from 'styled-components'
+import styled from 'styled-components'
 
-import { WarningIcon } from '../Icons/WarningIcon'
+import { WarningIcon } from '../Icons'
 
-import { TextAreaProps } from './TextArea.types'
+import type { TextAreaProps } from './TextArea.types'
 
 type TextAreaRootProps =
     React.HTMLAttributes<HTMLDivElement>

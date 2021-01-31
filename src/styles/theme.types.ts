@@ -1,17 +1,17 @@
 import type { Palette } from './palette'
 import type { Sizing } from './sizing'
-import { Spacing } from './spacing'
-import { Transitions } from './transition'
+import type { Spacing } from './spacing'
+import type { Transitions } from './transition'
 import type { Typography } from './typography'
 import type { ZIndex } from './zIndex'
 
 export type Theme = {
-    sizing: Sizing,
-    palette: Palette,
-    typography: Typography,
-    zIndex: ZIndex,
-    spacing: Spacing,
-    transitions: Transitions,
+    sizing: Sizing
+    palette: Palette
+    typography: Typography
+    zIndex: ZIndex
+    spacing: Spacing
+    transitions: Transitions
 }
 
 export type SpacingType =

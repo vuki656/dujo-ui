@@ -1,12 +1,10 @@
-import React from 'react'
-import styled, {
-    CSSObject,
-    keyframes,
-} from 'styled-components'
+import type React from 'react'
+import type { CSSObject } from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 
-import { Theme } from '../styles'
+import type { Theme } from '../styles'
 
-import { ButtonProps } from './Button.types'
+import type { ButtonProps } from './Button.types'
 
 type ButtonRootTypes =
     React.ButtonHTMLAttributes<HTMLButtonElement>
@@ -15,7 +13,7 @@ type ButtonRootTypes =
 type ButtonIconTypes =
     React.HTMLAttributes<HTMLDivElement>
     & {
-    position: 'start' | 'end',
+    position: 'start' | 'end'
 }
 
 export const getButtonStyles = (

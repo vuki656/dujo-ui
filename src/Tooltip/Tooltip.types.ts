@@ -1,6 +1,6 @@
-import React from 'react'
+import type React from 'react'
 
 export type TooltipProps = {
-    label: string,
+    label: string
     children: React.ReactElement
 }

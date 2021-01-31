@@ -1,7 +1,8 @@
-import React from 'react'
-import styled, { CSSObject } from 'styled-components'
+import type React from 'react'
+import type { CSSObject } from 'styled-components'
+import styled from 'styled-components'
 
-import { DatePickerProps } from './DatePicker.types'
+import type { DatePickerProps } from './DatePicker.types'
 
 type DatePickerRootProps =
     React.HTMLAttributes<HTMLDivElement>
@@ -94,4 +95,3 @@ export const DatePickerLabel = styled('p')((props) => ({
     fontWeight: 'bold',
     margin: '0 0 5px 0',
 }))
-

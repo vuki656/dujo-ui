@@ -1,5 +1,5 @@
-import React from 'react'
+import type React from 'react'
 
 export type CheckboxProps = React.InputHTMLAttributes<HTMLInputElement> & {
-    label?: string,
+    label?: string
 }

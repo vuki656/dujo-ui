@@ -1,7 +1,7 @@
 export type Sizing = {
     dialog: {
-        lg: number,
-        md: number,
-        sm: number,
-    },
+        lg: number
+        md: number
+        sm: number
+    }
 }

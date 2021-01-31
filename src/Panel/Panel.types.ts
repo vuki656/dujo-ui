@@ -1,7 +1,7 @@
-import React from 'react'
+import type React from 'react'
 
-import { SpacingType } from '../styles'
+import type { SpacingType } from '../styles'
 
 export type PanelProps = React.HTMLAttributes<HTMLDivElement> & {
-    spacing?: SpacingType,
+    spacing?: SpacingType
 }

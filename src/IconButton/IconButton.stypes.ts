@@ -1,15 +1,15 @@
-import React from 'react'
+import type React from 'react'
 import styled from 'styled-components'
 
 import { getButtonStyles } from '../Button'
 
-import { IconButtonProps } from './IconButton.types'
+import type { IconButtonProps } from './IconButton.types'
 
-type IconButtonRoot =
+type IconButtonRootProps =
     React.ButtonHTMLAttributes<HTMLButtonElement>
     & Pick<IconButtonProps, 'variant'>
 
-export const IconButtonRoot = styled('button')<IconButtonRoot>((props) => {
+export const IconButtonRoot = styled('button')<IconButtonRootProps>((props) => {
     let styles = {
         '&:focus': { outline: 'none' },
         ...getButtonStyles(props.theme, props),

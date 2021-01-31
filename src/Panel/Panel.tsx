@@ -1,7 +1,7 @@
 import * as React from 'react'
 
 import { PanelRoot } from './Panel.styles'
-import { PanelProps } from './Panel.types'
+import type { PanelProps } from './Panel.types'
 
 export const Panel: React.FunctionComponent<PanelProps> = (props) => {
     const {

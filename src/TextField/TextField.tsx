@@ -8,7 +8,7 @@ import {
     TextFieldLabel,
     TextFieldRoot,
 } from './TextField.styles'
-import { TextFieldProps } from './TextField.types'
+import type { TextFieldProps } from './TextField.types'
 
 export const TextField: React.FunctionComponent<TextFieldProps> = (props) => {
     const {

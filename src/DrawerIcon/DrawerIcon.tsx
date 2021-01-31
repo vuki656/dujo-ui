@@ -3,7 +3,7 @@ import * as React from 'react'
 import { Tooltip } from '../Tooltip'
 
 import { DrawerIconRoot } from './DrawerIcon.styles'
-import { DrawerIconProps } from './DrawerIcon.types'
+import type { DrawerIconProps } from './DrawerIcon.types'
 
 export const DrawerIcon = React.forwardRef<HTMLDivElement, DrawerIconProps>((props, ref) => {
     const {

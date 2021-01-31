@@ -8,7 +8,7 @@ import {
     NotificationSuccessIcon,
     NotificationWarningIcon,
 } from './Notification.styles'
-import { NotificationProps } from './Notification.types'
+import type { NotificationProps } from './Notification.types'
 
 export const Notification: React.FunctionComponent<NotificationProps> = (props) => {
     const {
