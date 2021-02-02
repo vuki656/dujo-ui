@@ -12,10 +12,10 @@ import type { TextAreaProps } from './TextArea.types'
 
 export const TextArea: React.FunctionComponent<TextAreaProps> = (props) => {
     const {
-        fullWidth = false,
-        label,
-        helperText,
         error = false,
+        fullWidth = false,
+        helperText,
+        label,
         ...other
     } = props
 

@@ -8,9 +8,9 @@ import type { DrawerIconProps } from './DrawerIcon.types'
 export const DrawerIcon = React.forwardRef<HTMLDivElement, DrawerIconProps>((props, ref) => {
     const {
         icon,
-        tooltipText,
-        selected = false,
         onClick,
+        selected = false,
+        tooltipText,
         ...other
     } = props
 

@@ -8,9 +8,9 @@ import type { IconButtonProps } from './IconButton.types'
 export const IconButton: React.FunctionComponent<IconButtonProps> = (props) => {
     const {
         icon,
+        loading = false,
         size = 'medium',
         variant = 'primary',
-        loading = false,
         ...other
     } = props
 

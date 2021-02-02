@@ -12,11 +12,11 @@ import type { TextFieldProps } from './TextField.types'
 
 export const TextField: React.FunctionComponent<TextFieldProps> = (props) => {
     const {
-        onChange: onChangeProp,
-        fullWidth = false,
-        label,
-        helperText,
         error = false,
+        fullWidth = false,
+        helperText,
+        label,
+        onChange: onChangeProp,
         ...other
     } = props
 

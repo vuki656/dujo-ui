@@ -12,9 +12,9 @@ import type { CheckboxProps } from './Checkbox.types'
 export const Checkbox: React.FunctionComponent<CheckboxProps> = (props) => {
     const {
         checked,
-        onChange,
-        label,
         className,
+        label,
+        onChange,
         ...other
     } = props
 

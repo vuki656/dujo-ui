@@ -9,14 +9,14 @@ import type { ButtonProps } from './Button.types'
 
 export const Button: React.FunctionComponent<ButtonProps> = (props) => {
     const {
-        variant = 'primary',
+        children,
+        disabled = false,
+        endIcon,
         fullWidth = false,
         loading = false,
-        disabled = false,
-        children,
-        type = 'button',
         startIcon,
-        endIcon,
+        type = 'button',
+        variant = 'primary',
         ...other
     } = props
 
