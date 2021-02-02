@@ -1,6 +1,5 @@
 import Tippy from '@tippyjs/react'
 import * as React from 'react'
-import 'tippy.js/dist/tippy.css'
 
 import type { TooltipProps } from './Tooltip.types'
 
