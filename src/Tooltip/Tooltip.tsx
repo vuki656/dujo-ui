@@ -1,12 +1,15 @@
 import Tippy from '@tippyjs/react'
 import * as React from 'react'
+import 'tippy.js/dist/tippy.css'
 
 import type { TooltipProps } from './Tooltip.types'
 
 export const Tooltip: React.FunctionComponent<TooltipProps> = (props) => {
     const {
-        label,
         children,
+        enterDelay = 400,
+        exitDelay = 100,
+        label,
         ...other
     } = props
 
@@ -14,12 +17,12 @@ export const Tooltip: React.FunctionComponent<TooltipProps> = (props) => {
         <Tippy
             content={label}
             delay={[
-                400,
-                null,
+                enterDelay,
+                exitDelay,
             ]}
             {...other}
         >
-            {children}
+            {children as React.ReactElement}
         </Tippy>
     )
 }
