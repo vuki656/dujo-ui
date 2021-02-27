@@ -16,10 +16,12 @@ export const GlobalStyles = createGlobalStyle<{theme: Theme}>((props) => {
         body: {
             backgroundColor: props.theme.palette.grey.light500,
             fontFamily: props.theme.typography.fontFamily.primary,
+            height: '100%',
             margin: '0px',
         },
         html: {
             fontSize: '16px',
+            height: '100%',
         },
         p: { margin: 0 },
     }
