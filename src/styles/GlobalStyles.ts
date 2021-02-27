@@ -14,7 +14,6 @@ export const GlobalStyles = createGlobalStyle<{theme: Theme}>((props) => {
             textDecoration: 'none',
         },
         body: {
-            backgroundColor: props.theme.palette.grey.light500,
             fontFamily: props.theme.typography.fontFamily.primary,
             height: '100%',
             margin: '0px',
