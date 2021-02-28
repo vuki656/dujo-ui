@@ -64,7 +64,7 @@ export const TextFieldHelperText = styled('p')<TextFieldHelperTextProps>((props)
     if (props.error) {
         styles = {
             ...styles,
-            color: props.theme.palette.red,
+            color: props.theme.palette.red.main,
         }
     }
 
