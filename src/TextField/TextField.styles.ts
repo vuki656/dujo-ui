@@ -71,4 +71,4 @@ export const TextFieldHelperText = styled('p')<TextFieldHelperTextProps>((props)
     return styles
 })
 
-export const TextFieldErrorIcon = styled(WarningIcon)((props) => ({ fill: props.theme.palette.red }))
+export const TextFieldErrorIcon = styled(WarningIcon)((props) => ({ fill: props.theme.palette.red.main }))
