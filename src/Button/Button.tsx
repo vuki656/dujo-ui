@@ -13,6 +13,7 @@ export const Button: React.FunctionComponent<ButtonProps> = (props) => {
         disabled = false,
         endIcon,
         fullWidth = false,
+        iconSpacing,
         loading = false,
         startIcon,
         type = 'button',
@@ -33,13 +34,19 @@ export const Button: React.FunctionComponent<ButtonProps> = (props) => {
             ) : (
                 <>
                     {startIcon ? (
-                        <ButtonIconWrapper position="start">
+                        <ButtonIconWrapper
+                            iconSpacing={iconSpacing}
+                            position="start"
+                        >
                             {startIcon}
                         </ButtonIconWrapper>
                     ) : null}
                     {children}
                     {endIcon ? (
-                        <ButtonIconWrapper position="end">
+                        <ButtonIconWrapper
+                            iconSpacing={iconSpacing}
+                            position="end"
+                        >
                             {endIcon}
                         </ButtonIconWrapper>
                     ) : null}

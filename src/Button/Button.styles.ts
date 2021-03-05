@@ -12,6 +12,7 @@ type ButtonRootTypes =
 
 type ButtonIconTypes =
     React.HTMLAttributes<HTMLDivElement>
+    & Pick<ButtonProps, 'iconSpacing'>
     & {
     position: 'start' | 'end'
 }
@@ -97,6 +98,7 @@ export const ButtonRoot = styled('button')<ButtonRootTypes>((props) => ({
 
 export const ButtonIconWrapper = styled('div')<ButtonIconTypes>((props) => ({
     display: 'flex',
+    margin: props.iconSpacing,
     marginLeft: props.position === 'end' && props.theme.spacing.xs,
     marginRight: props.position === 'start' && props.theme.spacing.xs,
 }))
